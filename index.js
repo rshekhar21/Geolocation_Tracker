@@ -31,5 +31,5 @@ io.on('connection', (socket)=>{
 })
 
 
-const port = process.env.port || 6000;
-server.listen(port);
+const port = process.env.PORT || 6000;
+server.listen(port, ()=>console.log(`server runnit at localhost://${port} | https://tml.ebsserver.in`));
